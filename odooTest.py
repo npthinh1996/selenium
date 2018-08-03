@@ -6,7 +6,7 @@ import unittest
 class OdooTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.driver = webdriver.Firefox(executable_path="../webdriver/firefox")
+        self.driver = webdriver.Firefox(executable_path="webdriver/firefox")
         self.driver.get("https://erp.mangoads.vn/")
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 10)
